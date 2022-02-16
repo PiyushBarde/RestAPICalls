@@ -13,4 +13,8 @@ public class RestAPICallsController {
 	public String sayHello(@RequestParam(value="name")String name){
 		return "Hello " + name + " from BridgeLabz";
 	}
+	@GetMapping(("/param/{name}"))
+	public String sayHello1(@PathVariable String name){
+		return "Hello " + name + " from BridgeLabz";
+	}
 }
